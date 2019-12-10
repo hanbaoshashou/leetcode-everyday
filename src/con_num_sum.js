@@ -1,3 +1,10 @@
+/**
+ * 给一个正整数，计算它是哪几个连续正整数的和
+ * input: 15
+ * output: 7-8, 4-5-6, 1-2-3-4-5
+ *
+ * 思路
+ */
 function cal(k) {
   const arr = []
 
@@ -30,4 +37,4 @@ function cal(k) {
   return arr
 }
 
-console.log(cal(15))
+module.exports = cal
