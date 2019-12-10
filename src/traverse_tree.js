@@ -1,7 +1,7 @@
-function tranverse(node) {}
+function traverse(node) {}
 
 function deep(ro) {
-  tranverse(ro)
+  traverse(ro)
 
   if (ro.left) {
     deep(ro.left)
@@ -13,7 +13,7 @@ function deep(ro) {
 }
 
 function wide(arr) {
-  arr.forEach(tranverse)
+  arr.forEach(traverse)
 
   const nextArr = []
 

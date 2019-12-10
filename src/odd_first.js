@@ -1,9 +1,6 @@
-function swap(a, b, arr) {
-  const t = arr[a]
-  arr[a] = arr[b]
-  arr[b] = t
-}
-
+/**
+ * 给一个整数数组，把里面的奇数放在前面，偶数放后面
+ */
 function cal(arr) {
   let j = 0
   let k = arr.length - 1
@@ -35,6 +32,12 @@ function cal(arr) {
   }
 
   return arr
+}
+
+function swap(a, b, arr) {
+  const t = arr[a]
+  arr[a] = arr[b]
+  arr[b] = t
 }
 
 console.log(cal([4, 1, 7, 8]))

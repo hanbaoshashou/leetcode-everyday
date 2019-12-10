@@ -1,3 +1,6 @@
+/**
+ * 计算两个字符串的最长公共子串
+ */
 function cal(str1, str2) {
   const sub_s = str1.length > str2.length ? str2 : str1
   const fath_s = str1.length > str2.length ? str1 : str2

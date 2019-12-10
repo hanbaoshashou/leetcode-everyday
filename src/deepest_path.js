@@ -1,3 +1,6 @@
+/**
+ * 计算一棵二叉树的最深路径并列出
+ */
 function cal(ro) {
   const arr = []
 
@@ -15,3 +18,5 @@ function cal(ro) {
     }
   }
 }
+
+module.exports = cal
