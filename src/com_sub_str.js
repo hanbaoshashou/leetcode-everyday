@@ -1,5 +1,8 @@
 /**
  * 计算两个字符串的最长公共子串
+ *
+ * 思路：
+ * 递归，从大到小，列出较短字符串的所有子串，一旦包含就返回改子串
  */
 function cal(str1, str2) {
   const sub_s = str1.length > str2.length ? str2 : str1
