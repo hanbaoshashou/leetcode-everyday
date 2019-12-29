@@ -5,7 +5,6 @@ function traverse(node) {}
 
 // 深度优先
 function deep(ro) {
-  traverse(ro)
   if (ro.left) {
     deep(ro.left)
   }
