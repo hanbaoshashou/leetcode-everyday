@@ -2,21 +2,17 @@
  * 替换字符串
  */
 function replace(str, s, t) {
-  const arr = str.split('')
-  const s_arr = s.split('')
-  const t_arr = t.split('')
-
   const new_arr = []
 
-  for (let i = 0; i < arr.length; i++) {
-    const e = arr[i]
+  for (let i = 0; i < str.length; i++) {
+    const e = str[i]
 
-    if (e === s_arr[0]) {
-      const isS = isSame(arr.slice(i, i + t_arr.length - 1), s_arr)
+    if (e === s[0]) {
+      const isSame = str.slice(i, i + s.length) === s
 
-      if (isS) {
-        new_arr.push(...t_arr)
-        i = i + s_arr.length - 1
+      if (isSame) {
+        new_arr.push(t)
+        i = i + s.length - 1
       } else {
         new_arr.push(e)
       }
@@ -25,11 +21,7 @@ function replace(str, s, t) {
     }
   }
 
-  function isSame(arr1, arr2) {
-    return arr1.join('') === arr2.join('')
-  }
-
   return new_arr.join('')
 }
 
-console.log(replace('a vc devc', 'vc', 'kkk'))
+console.log(replace('a vc devcv', 'vc', 'kkk'))
